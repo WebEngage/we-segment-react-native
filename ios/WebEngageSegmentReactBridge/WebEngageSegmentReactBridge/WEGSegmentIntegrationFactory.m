@@ -108,7 +108,7 @@
 }
 
 - (void)initialiseWEGVersion {
-    WegVersionKey key = WegVersionKeySEG;
+    WegVersionKey key = WegVersionKeySEGRN;
     [[WebEngage sharedInstance] setVersionForChildSDK:WEG_REACT_NATIVE_SEGMENT_PLUGIN_VERSION forKey:key];
 }
 
