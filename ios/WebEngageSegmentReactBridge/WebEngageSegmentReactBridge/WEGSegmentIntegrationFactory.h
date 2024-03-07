@@ -1,10 +1,3 @@
-//
-//  WEGSegmentIntegrationFactory.h
-//  ReactNativeSegmentWebEngage
-//
-//  Created by Milind Keni on 29/12/23.
-//
-
 #import <Foundation/Foundation.h>
 #import <WebEngage/WebEngage.h>
 NS_ASSUME_NONNULL_BEGIN

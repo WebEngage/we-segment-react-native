@@ -1,10 +1,3 @@
-//
-//  WEGSegmentPluginInfo.h
-//  Pods
-//
-//  Created by Milind Keni on 04/01/24.
-//
-
 #ifndef WEGSegmentPluginInfo_h
 #define WEGSegmentPluginInfo_h
 

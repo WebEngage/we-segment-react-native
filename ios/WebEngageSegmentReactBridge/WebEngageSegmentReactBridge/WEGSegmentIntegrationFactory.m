@@ -1,10 +1,3 @@
-//
-//  WEGSegmentIntegrationFactory.m
-//  ReactNativeSegmentWebEngage
-//
-//  Created by Milind Keni on 29/12/23.
-//
-
 #import "WEGSegmentIntegrationFactory.h"
 #import "WEGSegmentPluginInfo.h"
 

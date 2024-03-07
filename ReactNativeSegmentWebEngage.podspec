@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.version             = package["version"]
   s.description         = package["description"]
   s.summary             = <<-DESC
-                            A RN
+                            A RN Segment Plugin
                           DESC
   s.homepage            = "https://www.webengage.com"
   s.license             = package['license']
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source              = {:file => './' }
   s.platform            = :ios, "11.0"
   s.dependency          'React'
-  s.dependency          'WebEngage'
+  s.dependency          'WebEngage','>= 6.6.1'
   s.source_files        = 'ios/WebEngageSegmentReactBridge/WebEngageSegmentReactBridge/**/*.{h,m}'
   
 end

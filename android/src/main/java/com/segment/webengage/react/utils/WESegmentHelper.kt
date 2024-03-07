@@ -54,7 +54,6 @@ class WESegmentHelper {
             return
         }
 
-        Log.e(tag, "create: ${licenseCode} ${overrideLC} ${map}" )
 
         val mergedConfig = if (webEngageConfig != null) {
             webEngageConfig!!.currentState.setWebEngageKey(licenseCode).setDebugMode(true).build()
@@ -68,7 +67,6 @@ class WESegmentHelper {
             tag,
             "Started WebEngage SDK initialization through Segment Integration, license code: $licenseCode"
         )
-    //    WebEngage.engage(context.applicationContext, mergedConfig)
     }
 
     companion object {
@@ -173,7 +171,7 @@ class WESegmentHelper {
                     try {
                         birthDate = toISO8601Date(birthDateObj as String?)
                     } catch (e: Exception) {
-                        Log.e(javaClass.name, "identify: ${e.message}" )
+                        Logger.v(javaClass.name, "identify error: ${e.message}" )
                     }
                     if (birthDate != null) {
                         val gregorianCalendar: Calendar =
@@ -237,7 +235,6 @@ class WESegmentHelper {
         return try {
             sdf.parse(dateString)
         } catch (e: Exception) {
-            Log.e(javaClass.name, "toISO8601Date: ${e.message}")
             null
         }
     }

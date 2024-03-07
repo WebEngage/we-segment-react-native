@@ -1,5 +1,3 @@
-
-
 #import "WESegmentBridge.h"
 #import <React/RCTLog.h>
 #import <React/RCTConvert.h>
