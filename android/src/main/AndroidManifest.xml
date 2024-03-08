@@ -1,0 +1,9 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.segment.webengage.react">
+      <application>
+        <meta-data
+            android:name="com.webengage.child.seg_a"
+            android:value="seg_a:${we_seg_rn_version}" />
+    </application>
+</manifest>

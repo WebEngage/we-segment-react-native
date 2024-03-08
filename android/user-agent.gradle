@@ -1,0 +1,15 @@
+import groovy.json.JsonSlurper
+
+String libraryVersionName = "0.0.1"
+File packageJson = new File(project.projectDir.parentFile, "package.json")
+
+if (packageJson.exists()) {
+  def parsedJson = new JsonSlurper().parseText(packageJson.text)
+  libraryVersionName = parsedJson.version
+}
+
+android {
+  defaultConfig {
+    manifestPlaceholders = [we_seg_rn_version: libraryVersionName]
+  }
+}

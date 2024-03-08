@@ -1,0 +1,41 @@
+{
+  "name": "react-native-segment-plugin-webengage",
+  "version": "1.0.0",
+  "description": "Plugin to integrate WebEngage SDK with Segment React Native SDK",
+  "main": "src/index.ts",
+  "files": [
+    "android",
+    "ios",
+    "src",
+    "package.json",
+    "ReactNativeSegmentWebEngage.podspec",
+    "README.md",
+    "!**/__tests__",
+    "!**/__mocks__"
+  ],
+  "keywords": [
+    "webengage",
+    "segment",
+    "react-native",
+    "ios",
+    "android",
+    "plugin"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "@segment/analytics-react-native": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/react-native": "^0.69.3",
+    "@tsconfig/react-native": "^2.0.2",
+    "ts-jest": "^29.1.0"
+  }
+}
